@@ -33,11 +33,11 @@ struct ScrollingBuffer {
     }
 };
 
-class AtiInspector : public Application {
+class AtiGui : public Application {
 public:
     // constructor
-    AtiInspector(const std::string& serial, const ChanNums& channels) : 
-        Application(640,480,"ATI Inspector"),
+    AtiGui(const std::string& serial, const ChanNums& channels) : 
+        Application(640,480,"ATI GUI"),
         m_serial(serial),
         m_channels(channels)
     {
@@ -128,7 +128,7 @@ public:
 // main
 int main(int argc, char *argv[])
 {
-    Options options("ATI Inspector", "Utility Tool for Inspecting ATI F/T Sensor Data");
+    Options options("ATI GUI", "Utility Tool for inspecting ATI F/T sensor data with a Q8-USB");
     options.add_options()
         ("s,serial","ATI Sensor Serial Number (e.g. FT06833)", cxxopts::value<std::string>())
         ("c,channels","Analog input channel numbers (e.g. 0,1,2,3,4,5)", cxxopts::value<ChanNums>())
@@ -159,7 +159,7 @@ int main(int argc, char *argv[])
         }
     }
 
-    AtiInspector app(serial,channels);
+    AtiGui app(serial,channels);
     app.run();
     return 0;
 }
