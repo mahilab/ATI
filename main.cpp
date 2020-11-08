@@ -128,7 +128,7 @@ public:
 // main
 int main(int argc, char *argv[])
 {
-    Options options("ATI GUI", "Utility Tool for inspecting ATI F/T sensor data with a Q8-USB");
+    Options options("ATI GUI", "Utility tool for inspecting ATI F/T sensor data with a Q8-USB");
     options.add_options()
         ("s,serial","ATI Sensor Serial Number (e.g. FT06833)", cxxopts::value<std::string>())
         ("c,channels","Analog input channel numbers (e.g. 0,1,2,3,4,5)", cxxopts::value<ChanNums>())
