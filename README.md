@@ -1,5 +1,5 @@
 # ATI
-Utility Tool for Inspecting ATI F/T Sensor Data with a Q8-USB
+Utility Tool for Inspecting ATI F/T sensor data with a Q8-USB
 
 ## Usage
 
