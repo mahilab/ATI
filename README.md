@@ -1,4 +1,4 @@
-# ATI-Inspector
+# ATI
 Utility Tool for Inspecting ATI F/T Sensor Data with a Q8-USB
 
 ## Usage
